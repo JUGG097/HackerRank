@@ -1,4 +1,0 @@
-MYSQL
-
-SELECT CONCAT(Name,'(', SUBSTRING(Occupation,1,1),')') FROM Occupations ORDER BY Name;
-SELECT CONCAT('There are total ', cnt,' ',LOWER(Occupation),'s.') FROM (select count(*) cnt, Occupation from Occupations group by Occupation)a ORDER BY cnt;
